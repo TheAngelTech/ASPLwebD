@@ -106,15 +106,8 @@ const Resources = () => {
 
 
 
-      {/* Blog Highlights Section */}
-      <section>
-        <div className="row mb-4">
-          <div className="col-12 text-center">
-            <h3 className="fw-bold text-dark mb-3">Recent Blog Highlights</h3>
-            <div className="accent-center-underline mx-auto mb-3"></div>
-            <p className="text-muted">Catch up with our latest knowledge drops from LinkedIn</p>
-          </div>
-        </div>
+     <section className='py-5 bg-light'>
+      <div className='container'>
         {/* Tools Section */}
         <section id="tools_section" className="py-5 bg-light resource-section">
           <div className="container">
@@ -200,6 +193,15 @@ const Resources = () => {
           </div>
         </section>
 
+        <section>
+        <div className="row mb-4">
+          <div className="col-12 text-center">
+            <h3 className="fw-bold text-dark mb-3">Recent Blog Highlights</h3>
+            <div className="accent-center-underline mx-auto mb-3"></div>
+            <p className="text-muted">Catch up with our latest knowledge drops from LinkedIn</p>
+          </div>
+        </div>
+
         <div className="row g-4 justify-content-center mb-5">
           {[
             {
@@ -248,6 +250,9 @@ const Resources = () => {
 
 
       </section >
+
+      </div>
+      </section>
 
 
       {/* Newsletter & CTA Section */}

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import  {PUBLIC_URL}  from './../constants';
 
 const CareerPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -111,7 +112,7 @@ const CareerPage = () => {
             <div className="col-lg-6">
               <div className="hero-illustration">
                 <Image
-                  src="/images/team-illus.png"
+                  src={`${PUBLIC_URL}/images/team-illus.png`}
                   alt="Team Collaboration Illustration"
                   width={600}
                   height={300}
