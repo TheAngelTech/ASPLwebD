@@ -20,7 +20,7 @@ const ToolsSection = () => {
                     <div className="col-lg-6">
                         <div className="p-4 bg-light rounded-4 shadow-sm mb-4">
                             <div className="d-flex justify-content-between align-items-center mb-3">
-                                <h4 className="fw-bold mb-0">Corporate Tax Calculator</h4>
+                                <h4 className="fw-bold mb-0">Corporate Tax Calculator (Singapore)</h4>
                                 <span className="badge badge-orange rounded-pill px-3 py-2">Free</span>
                             </div>
                             <p className="mb-4">

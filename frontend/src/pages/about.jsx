@@ -120,7 +120,7 @@ const AboutUs = () => {
             <div className="col-lg-10 mx-auto text-center">
               <h1 className="display-3 fw-bold text-white mb-4 text-shadow">About Us</h1>
               <p className="lead text-white mb-5 fs-4 fw-light">
-              Angel Services supports businesses and NRIs with strategic, reliable solutions in finance, compliance, and incorporation across Asia and offshore jurisdictions.
+                Angel Services supports businesses and NRIs with strategic, reliable solutions in finance, compliance, and incorporation across Asia and offshore jurisdictions.
               </p>
 
 
@@ -172,7 +172,7 @@ const AboutUs = () => {
             </div>
             <div className="col-md-6">
               <img
-                src="/images/professional_team.jpg"
+                src="https://angel-frontend.s3.ap-southeast-1.amazonaws.com/public/images/professional_team.jpg"
                 alt="Professional team"
                 className="img-fluid rounded"
               />
@@ -358,48 +358,48 @@ const AboutUs = () => {
           </h2>
           <div className="underline-center mx-auto mb-4"></div>
 
-                {/* Leadership Section */}
-<h3 className="text-center mb-3 mb-md-4 text-dark">Leadership</h3>
-<div className="row g-4 justify-content-center">
-  {[
-    {
-      name: 'Rajat Gupta',
-      role: 'Managing Director',
-      img: 'https://angel-frontend.s3.ap-southeast-1.amazonaws.com/public/images/Rajat.jpg',
-      linkedin: 'https://www.linkedin.com/in/guptarajat13/',
-      email: 'rajat.gupta@theangelservices.com',
-      description: 'Rajat is an accomplished professional with over 18 years of experience in finance and business administration across multiple industries. His expertise includes financial management, capital raising, accounting, taxation, secretarial, and human resources with a strong understanding of regional laws and regulations.',
-    },
-    {
-      name: "Malcolm D'souza",
-      role: 'Director',
-      img: 'https://angel-frontend.s3.ap-southeast-1.amazonaws.com/public/images/Malcolm.jpg',
-      linkedin: 'https://www.linkedin.com/in/malcolmdsouza/',
-      email: 'malcolmd.dsouza@gmail.com',
-      description: 'Malcolm brings over 14 years of deep knowledge and experience in Enterprise Risk Management and Structured Trade Finance across global Commodity Trade Houses and International Banks in Singapore, Dubai and Abu Dhabi. His expertise includes Credit and Operational Risk Management, Counterpart Due Diligence, and Sanctions/Compliance Risk Management.',
-    },
-    {
-      name: 'Monika Jain',
-      role: 'Director – India Operations',
-      img: 'https://angel-frontend.s3.ap-southeast-1.amazonaws.com/public/images/Monika.jpg',
-      linkedin: 'https://in.linkedin.com/in/monika-jain-ab545914',
-      email: 'monika.jain@theangelservices.com',
-      description: `Monika Jain is a Chartered Accountant with 15+ years of experience in finance, compliance, and BPO. A former PwC specialist, she excels in statutory audits, IFRS, US GAAP, and financial advisory. Monika drives global business expansion by facilitating regulatory compliance, and scalable finance outsourcing from an India-based back office, streamlining processes and empowering growth.`,
-    },
-    {
-      name: 'Sriniwas Nandiraju',
-      role: 'Director – UAE Operations',
-      img: 'https://angel-frontend.s3.ap-southeast-1.amazonaws.com/public/images/Sriniwas.jpg', // Ensure this image exists in your /public/images folder
-      linkedin: '', // Add LinkedIn if available
-      email: 'sriniwas.nandiraju@theangelservices.com',
-      description: `Sriniwas Nandiraju brings over 20 years of global experience in private banking, wealth tech, and regulatory consulting. As a strategic partner to Angel Services, he supports clients in cross-border structuring, DIFC-based setups, and family office advisory—combining deep regulatory insight with practical expertise in wealth management and institutional engagement across the GCC.`,
-    }
-  ].map(member => (
-    <div className="col-md-6" key={member.name}>
-      <TeamCard member={member} />
-    </div>
-  ))}
-</div>
+          {/* Leadership Section */}
+          <h3 className="text-center mb-3 mb-md-4 text-dark">Leadership</h3>
+          <div className="row g-4 justify-content-center">
+            {[
+              {
+                name: 'Rajat Gupta',
+                role: 'Managing Director',
+                img: 'https://angel-frontend.s3.ap-southeast-1.amazonaws.com/public/images/Rajat.jpg',
+                linkedin: 'https://www.linkedin.com/in/guptarajat13/',
+                email: 'rajat.gupta@theangelservices.com',
+                description: 'Rajat is an accomplished professional with over 18 years of experience in finance and business administration across multiple industries. His expertise includes financial management, capital raising, accounting, taxation, secretarial, and human resources with a strong understanding of regional laws and regulations.',
+              },
+              {
+                name: "Malcolm D'souza",
+                role: 'Director',
+                img: 'https://angel-frontend.s3.ap-southeast-1.amazonaws.com/public/images/Malcolm.jpg',
+                linkedin: 'https://www.linkedin.com/in/malcolmdsouza/',
+                email: 'malcolmd.dsouza@gmail.com',
+                description: 'Malcolm brings over 14 years of deep knowledge and experience in Enterprise Risk Management and Structured Trade Finance across global Commodity Trade Houses and International Banks in Singapore, Dubai and Abu Dhabi. His expertise includes Credit and Operational Risk Management, Counterpart Due Diligence, and Sanctions/Compliance Risk Management.',
+              },
+              {
+                name: 'Monika Jain',
+                role: 'Director – India Operations',
+                img: 'https://angel-frontend.s3.ap-southeast-1.amazonaws.com/public/images/Monika.jpg',
+                linkedin: 'https://in.linkedin.com/in/monika-jain-ab545914',
+                email: 'monika.jain@theangelservices.com',
+                description: `Monika Jain is a Chartered Accountant with 15+ years of experience in finance, compliance, and BPO. A former PwC specialist, she excels in statutory audits, IFRS, US GAAP, and financial advisory. Monika drives global business expansion by facilitating regulatory compliance, and scalable finance outsourcing from an India-based back office, streamlining processes and empowering growth.`,
+              },
+              {
+                name: 'Sriniwas Nandiraju',
+                role: 'Director – UAE Operations',
+                img: 'https://angel-frontend.s3.ap-southeast-1.amazonaws.com/public/images/Sriniwas.jpg', // Ensure this image exists in your /public/images folder
+                linkedin: '', // Add LinkedIn if available
+                email: 'sriniwas.nandiraju@theangelservices.com',
+                description: `Sriniwas Nandiraju brings over 20 years of global experience in private banking, wealth tech, and regulatory consulting. As a strategic partner to Angel Services, he supports clients in cross-border structuring, DIFC-based setups, and family office advisory—combining deep regulatory insight with practical expertise in wealth management and institutional engagement across the GCC.`,
+              }
+            ].map(member => (
+              <div className="col-md-6" key={member.name}>
+                <TeamCard member={member} />
+              </div>
+            ))}
+          </div>
 
 
           {/* Advisors Section */}
@@ -414,7 +414,7 @@ const AboutUs = () => {
                 email: 'r@theangelservices.com',
                 description: "Rahul has 20 years of experience driving Digital Capabilities across Technology, Services, Consumer Goods, Beverages, Healthcare and Pharma industries. His strategic advisory and digital expertise guide the company's technology innovation and expansion.",
               },
-                            {
+              {
                 name: 'Willie Tan',
                 role: 'Advisor',
                 img: '',

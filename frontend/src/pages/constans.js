@@ -1,0 +1,1 @@
+export const public_url = 'https://angel-frontend.s3.ap-southeast-1.amazonaws.com/public';

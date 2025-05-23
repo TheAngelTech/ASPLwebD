@@ -2,6 +2,7 @@ import { useState } from 'react';
 import MainLayout from '../../layouts/MainLayout';
 import SEO from '../../components/SEO';
 import styles from '../../styles/Calculator.module.css';
+import Link from 'next/link';
 
 export default function GSTRequirement() {
   const [inputs, setInputs] = useState({
@@ -38,6 +39,18 @@ export default function GSTRequirement() {
         <p className={styles.description}>
           Check if your business is required to register for <strong>GST in Singapore</strong> based on annual taxable turnover.
         </p>
+
+        <div className={styles.disclaimerSection}>
+          <p className={styles.disclaimerText}>
+            This calculator is for general guidance only. Results are estimates and may not reflect your specific tax or regulatory situation.
+          </p>
+          <div className={styles.contactSection}>
+            <p>📩 Need tailored advice?</p>
+            <Link href="/contact" className={styles.contactButton}>
+              Contact us for a consultation
+            </Link>
+          </div>
+        </div>
 
         <div className={styles.cardBox}>
           <label htmlFor="taxableTurnover">Total Taxable Turnover (last 12 months)*</label>

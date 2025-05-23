@@ -85,17 +85,13 @@ export default function FinalHero() {
                                     swiper.navigation.update();
                                 }}
                                 onSwiper={setSwiperInstance}
-
-
                             >
                                 <SwiperSlide >
                                     <h1 className="display-3 fw-bold mb-4 text-gradient">
-                                        Launch Your Business
-                                        <span className="d-block text-primary">With Confidence</span>
+                                        Where Global Business Begins and Grows
                                     </h1>
                                     <p className="lead mb-4 text-muted">
-                                        Start your entrepreneurial journey with our expert guidance.
-                                        We handle the complex paperwork while you focus on your vision.
+                                        From Singapore to the world — we help you set up, scale, and stay compliant with clarity, agility, and integrity.
                                     </p>
                                     <div className="d-flex flex-wrap gap-3 mb-3">
                                         <Link
@@ -111,102 +107,57 @@ export default function FinalHero() {
                                             Learn More
                                         </Link>
                                     </div>
-
                                 </SwiperSlide>
-
-
-                                <SwiperSlide>
+                                <SwiperSlide >
                                     <h1 className="display-3 fw-bold mb-4 text-gradient">
-                                        Stay Compliant, Stay Secure
-                                        <span className="d-block text-primary">Get Guidance</span>
+                                        Your Partner for Business Growth
+                                        <span className="d-block text-primary">Globally Structured, Locally Compliant</span>
                                     </h1>
                                     <p className="lead mb-4 text-muted">
-                                        Our experts ensure your business meets all legal and compliance requirements, so you can operate with peace of mind.
+                                        End-to-end support for incorporation, governance, and financial operations across Singapore, India, UAE, Hong Kong, BVI, and beyond.
                                     </p>
                                     <div className="d-flex flex-wrap gap-3 mb-3">
                                         <Link
-                                            href="/services"
-                                            className="btn btn-primary btn-lg rounded-pill px-5 py-3 fw-semibold"
-                                        >
-                                            Get Help <i className="bi bi-arrow-right ms-2" />
-                                        </Link>
-                                        <Link
-                                            href="/services"
-                                            className="btn btn-outline-dark btn-lg rounded-pill px-5 py-3 fw-semibold"
-                                        >
-                                            Learn More
-                                        </Link>
-                                    </div>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <h1 className="display-3 fw-bold mb-4 text-gradient">
-                                        Effortless Accounting
-                                        <span className="d-block text-primary">Bookkeeping Made Simple</span>
-                                    </h1>
-                                    <p className="lead mb-4 text-muted">
-                                        Let us handle your books and finances, so you can focus on growing your business.
-                                    </p>
-                                    <div className="d-flex flex-wrap gap-3 mb-3">
-                                        <Link
-                                            href="/services/accounting"
+                                            href="/incorporation/step1"
                                             className="btn btn-primary btn-lg rounded-pill px-5 py-3 fw-semibold"
                                         >
                                             Start Now <i className="bi bi-arrow-right ms-2" />
                                         </Link>
                                         <Link
-                                            href="/services/accounting"
+                                            href="/services/incorporation"
                                             className="btn btn-outline-dark btn-lg rounded-pill px-5 py-3 fw-semibold"
                                         >
                                             Learn More
                                         </Link>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide>
+                                <SwiperSlide >
                                     <h1 className="display-3 fw-bold mb-4 text-gradient">
-                                        Expert Startup Advice
-                                        <span className="d-block text-primary">From Idea to Execution</span>
+                                        Structuring Success Across Borders
+                                        <span className="d-block text-primary">With Confidence</span>
                                     </h1>
                                     <p className="lead mb-4 text-muted">
-                                        Get personalized guidance from seasoned professionals to turn your business idea into reality.
+                                        Incorporation, Compliance, Accounting, Tax, Fund Administration & Legacy Planning — trusted by global entrepreneurs, family offices, and corporate groups.
                                     </p>
                                     <div className="d-flex flex-wrap gap-3 mb-3">
                                         <Link
-                                            href="/services/advisory"
+                                            href="/incorporation/step1"
                                             className="btn btn-primary btn-lg rounded-pill px-5 py-3 fw-semibold"
                                         >
-                                            Consult Now <i className="bi bi-arrow-right ms-2" />
+                                            Start Now <i className="bi bi-arrow-right ms-2" />
                                         </Link>
                                         <Link
-                                            href="/services/advisory"
+                                            href="/services/incorporation"
                                             className="btn btn-outline-dark btn-lg rounded-pill px-5 py-3 fw-semibold"
                                         >
                                             Learn More
                                         </Link>
                                     </div>
                                 </SwiperSlide>
-                                <SwiperSlide>
-                                    <h1 className="display-3 fw-bold mb-4 text-gradient">
-                                        Go Global with Ease
-                                        <span className="d-block text-primary">Expand Internationally</span>
-                                    </h1>
-                                    <p className="lead mb-4 text-muted">
-                                        We help you set up and manage your business in multiple countries, handling all the paperwork and regulations.
-                                    </p>
-                                    <div className="d-flex flex-wrap gap-3 mb-3">
-                                        <Link
-                                            href="/services/international"
-                                            className="btn btn-primary btn-lg rounded-pill px-5 py-3 fw-semibold"
-                                        >
-                                            Expand Now <i className="bi bi-arrow-right ms-2" />
-                                        </Link>
-                                        <Link
-                                            href="/services/international"
-                                            className="btn btn-outline-dark btn-lg rounded-pill px-5 py-3 fw-semibold"
-                                        >
-                                            Learn More
-                                        </Link>
-                                    </div>
-                                </SwiperSlide>
+
+
+
+
 
 
 
@@ -488,6 +439,14 @@ export default function FinalHero() {
 
                 .btn-orange i {
                     color: #000 !important;
+                }
+
+                .btn-outline-dark:hover {
+                    color: #fff !important;
+                }
+
+                .btn-outline-dark:hover i {
+                    color: #fff !important;
                 }
 
                 @media (max-width: 991.98px) {

@@ -55,7 +55,7 @@ const Navbar = () => {
                     Resources
                   </Link>
                   <div className={styles.dropdownMenu}>
-                    <Link href="/resources#tools" className={styles.dropdownItem}>Tools</Link>
+                    <Link href="/resources/tools" className={styles.dropdownItem}>Tools</Link>
                     <Link href="/resources/blogs" className={styles.dropdownItem}>Blogs</Link>
                   </div>
                 </li>

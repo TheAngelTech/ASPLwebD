@@ -23,8 +23,8 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Script src="/js/main.js" strategy="afterInteractive" />
-      
+      <Script src="https://angel-frontend.s3.ap-southeast-1.amazonaws.com/public/js/main.js" strategy="afterInteractive" />
+
       <Provider store={store}>
         <WizardProvider>
           <Navbar />

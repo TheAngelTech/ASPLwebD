@@ -2,6 +2,7 @@ import { useState } from 'react';
 import MainLayout from '../../layouts/MainLayout';
 import SEO from '../../components/SEO';
 import styles from '../../styles/Calculator.module.css';
+import Link from 'next/link';
 
 export default function AuditCalculator() {
   const [inputs, setInputs] = useState({
@@ -44,6 +45,18 @@ export default function AuditCalculator() {
           <p className={styles.description}>
             Determine if your company qualifies for audit exemption under ACRA’s small company criteria.
           </p>
+
+          <div className={styles.disclaimerSection}>
+            <p className={styles.disclaimerText}>
+              This calculator is for general guidance only. Results are estimates and may not reflect your specific tax or regulatory situation.
+            </p>
+            <div className={styles.contactSection}>
+              <p>📩 Need tailored advice?</p>
+              <Link href="/contact" className={styles.contactButton}>
+                Contact us for a consultation
+              </Link>
+            </div>
+          </div>
 
           <div className={styles.cardBox}>
             <label htmlFor="employees">Number of Employees (End of FY)*</label>

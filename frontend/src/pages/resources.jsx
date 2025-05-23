@@ -53,370 +53,205 @@ const Resources = () => {
   return (
     <>
       {/* Hero Section with Enhanced Design */}
-      <section className="resources-hero position-relative overflow-hidden">
-        <div className="resources-hero-bg"></div>
-
-        {/* Decorative Elements */}
-        <div className="hero-circles d-none d-md-block">
-          <div className="circle circle-1"></div>
-          <div className="circle circle-2"></div>
-          <div className="circle circle-3"></div>
+      <section
+        className="resources-hero position-relative text-white"
+        style={{
+          background: 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          overflow: 'hidden',
+          minHeight: '500px'
+        }}
+      >
+        {/* Animated Background Elements */}
+        <div className="animated-bg">
+          <div className="circle-1"></div>
+          <div className="circle-2"></div>
+          <div className="circle-3"></div>
         </div>
 
-        <div className="container position-relative" style={{ zIndex: 2 }}>
-          <div className="row min-vh-50 align-items-center py-5">
-            <div className="col-lg-7 text-black">
-              <div className="animate__animated animate__fadeInLeft">
-                <h1 className="display-4 fw-bold mb-2">Financial & Business Resources</h1>
-                <div className="accent-line mb-4"></div>
-                <p className="lead fs-4 mb-4">Expert tools and resources specifically designed for NRIs and global entrepreneurs</p>
-                <div className="d-flex flex-wrap gap-3 mt-4">
-                  <Link href="#calculator_section" className="btn btn-white btn-lg rounded-pill px-4 shadow-sm">
-                    <i className="bi bi-calculator me-2"></i>NRI Tax Calculator
-                  </Link>
-                  <Link href="#filing_section" className="btn btn-orange btn-lg rounded-pill px-4">
-                    <i className="bi bi-file-earmark-text me-2"></i>Tax Filing
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-5 d-none d-lg-block">
-              <div className="floating-image animate__animated animate__fadeInRight">
-                <div className="stats-card bg-white p-4 rounded-4 shadow-lg text-dark">
-                  <div className="d-flex justify-content-between align-items-center mb-3">
-                    <h4 className="fw-bold mb-0">NRI Tax Benefits</h4>
-                    <div className="badge badge-orange px-3 py-2">FY 2025-26</div>
-                  </div>
-                  <div className="stat-item d-flex align-items-center mb-3">
-                    <div className="stat-icon bg-light rounded-circle p-2 me-3">
-                      <i className="bi bi-bank fs-4"></i>
-                    </div>
-                    <div>
-                      <h6 className="mb-0">NRE Account Interest</h6>
-                      <p className="fs-5 fw-bold mb-0 text-success">Tax Exempt</p>
-                    </div>
-                  </div>
-                  <div className="stat-item d-flex align-items-center mb-3">
-                    <div className="stat-icon bg-light rounded-circle p-2 me-3">
-                      <i className="bi bi-currency-exchange fs-4"></i>
-                    </div>
-                    <div>
-                      <h6 className="mb-0">FCNR Deposits</h6>
-                      <p className="fs-5 fw-bold mb-0 text-success">Tax Exempt</p>
-                    </div>
-                  </div>
-                  <div className="stat-item d-flex align-items-center">
-                    <div className="stat-icon bg-light rounded-circle p-2 me-3">
-                      <i className="bi bi-globe fs-4"></i>
-                    </div>
-                    <div>
-                      <h6 className="mb-0">Foreign Income</h6>
-                      <p className="fs-5 fw-bold mb-0 text-success">Not Taxable in India</p>
-                    </div>
-                  </div>
-                </div>
+        <div className="container position-relative py-5" style={{ zIndex: 2 }}>
+          <div className="row py-5 min-vh-40">
+            <div className="col-lg-8 mx-auto text-center">
+              <h1 className="display-3 fw-bold text-white mb-4 text-shadow">Financial & Business Resources</h1>
+              <p className="lead text-white mb-5 fs-4 fw-light">
+                Expert tools and resources specifically designed for NRIs and global entrepreneurs
+              </p>
+              <div className="hero-buttons">
+                <a href="resources/tools" className="btn btn-yellow btn-lg rounded-pill px-4 py-3 fw-semibold me-2 mb-2 mb-md-0 shadow-sm">
+                  <i className="bi bi-calculator me-2"></i>NRI Tax Calculator
+                </a>
+                <Link href="resources/tools" className="btn btn-outline-light btn-lg rounded-pill px-4 py-3 fw-semibold">
+                  <i className="bi bi-file-earmark-text me-2"></i>Tax Filing
+                </Link>
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Wave Separator */}
+        <div className="wave-separator text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+            <path
+              fill="#ffffff"
+              fillOpacity="1"
+              d="M0,32L80,42.7C160,53,320,75,480,74.7C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,100L1360,100C1280,100,1120,100,960,100C800,100,640,100,480,100C320,100,160,100,80,100L0,100Z"
+            ></path>
+          </svg>
         </div>
       </section>
 
 
 
 
-      {/* Tools and Blogs Section */}
-      <section className="py-5 bg-light">
-        <div className="container">
 
-          {/* Section Heading 
-    <div className="row text-center mb-5">
-      <div className="col-12">
-        <h2 className="section-heading">Explore Our Tools & Insights</h2>
-        <div className="accent-center-underline mx-auto mb-3"></div>
-        <p className="lead">Use our expert calculators and stay updated with practical knowledge tailored for NRIs.</p>
-      </div>
-    </div>*/}
-
-          {/* Calculator Cards 2x2 
-    <div className="row g-4 mb-5">
-      {[
-        {
-          title: "Audit Requirement Calculator",
-          desc: "Check if your business qualifies for audit under Indian tax laws.",
-          icon: "bi-journal-check",
-          link: "/resources/audit-calculator"
-        },
-        {
-          title: "Corporate Tax Calculator",
-          desc: "Compute tax liability with applicable deductions & surcharges.",
-          icon: "bi-calculator",
-          link: "/resources/corporate-tax"
-        },
-        {
-          title: "Compliance Calendar",
-          desc: "Stay updated on return filing & financial due dates.",
-          icon: "bi-calendar2-event",
-          link: "/resources/compliance-calendar"
-        },
-        {
-          title: "GST Requirement Checker",
-          desc: "Find if your business needs GST registration based on turnover.",
-          icon: "bi-receipt",
-          link: "/resources/gst-requirement"
-        }
-      ].map((tool, index) => (
-        <div className="col-md-6" key={index}>
-          <div className="tool-box p-4 rounded-4 bg-white shadow-sm h-100 d-flex flex-column justify-content-between">
-            <div>
-              <div className="d-flex align-items-start mb-3">
-                <i className={`bi ${tool.icon} fs-2 text-warning me-3`}></i>
-                <div>
-                  <h5 className="fw-bold text-dark mb-1">{tool.title}</h5>
-                  <p className="text-muted mb-0">{tool.desc}</p>
-                </div>
-              </div>
-            </div>
-            <div className="mt-4">
-              <Link href={tool.link} className="btn btn-warning w-100 text-dark fw-semibold">
-                <i className="bi bi-arrow-right-circle me-2"></i>Use {tool.title.split(" ")[0]}
-              </Link>
-            </div>
+      {/* Blog Highlights Section */}
+      <section>
+        <div className="row mb-4">
+          <div className="col-12 text-center">
+            <h3 className="fw-bold text-dark mb-3">Recent Blog Highlights</h3>
+            <div className="accent-center-underline mx-auto mb-3"></div>
+            <p className="text-muted">Catch up with our latest knowledge drops from LinkedIn</p>
           </div>
         </div>
-      ))}
-    </div> */}
+        {/* Tools Section */}
+        <section id="tools_section" className="py-5 bg-light resource-section">
+          <div className="container">
+            {/* Section Heading */}
+            <div className="row text-center mb-5">
+              <div className="col-12">
+                <h2 className="section-heading">Explore Our Expert Tools</h2>
+                <div className="accent-center-underline mx-auto mb-3"></div>
+                <p className="lead">Empowering you with accurate calculators and timely compliance updates tailored for businesses.</p>
+              </div>
+            </div>
 
-
-          <section id="tools_section" className="py-5 bg-light resource-section">
-            <div className="container">
-              {/* Section Heading */}
-              <div className="row text-center mb-5">
-                <div className="col-12">
-                  <h2 className="section-heading">Explore Our Expert Tools</h2>
-                  <div className="accent-center-underline mx-auto mb-3"></div>
-                  <p className="lead">Empowering you with accurate calculators and timely compliance updates tailored for businesses.</p>
+            {/* Filter Buttons */}
+            <div className="row mb-5">
+              <div className="col-12 text-center">
+                <div className="d-flex flex-wrap justify-content-center gap-3">
+                  <button
+                    className={`d-flex align-items-center gap-2 rounded-pill px-4 py-2 fw-semibold ${selectedCountry === 'all' ? 'active-filter' : 'inactive-filter'}`}
+                    onClick={() => setSelectedCountry('all')}
+                  >
+                    <i className="bi bi-grid"></i> All Tools
+                  </button>
+                  <button
+                    className={`d-flex align-items-center gap-2 rounded-pill px-4 py-2 fw-semibold ${selectedCountry === 'india' ? 'active-filter' : 'inactive-filter'}`}
+                    onClick={() => setSelectedCountry('india')}
+                  >
+                    <i className="bi bi-geo-alt"></i> India
+                  </button>
+                  <button
+                    className={`d-flex align-items-center gap-2 rounded-pill px-4 py-2 fw-semibold ${selectedCountry === 'uae' ? 'active-filter' : 'inactive-filter'}`}
+                    onClick={() => setSelectedCountry('uae')}
+                  >
+                    <i className="bi bi-geo-alt"></i> UAE
+                  </button>
+                  <button
+                    className={`d-flex align-items-center gap-2 rounded-pill px-4 py-2 fw-semibold ${selectedCountry === 'singapore' ? 'active-filter' : 'inactive-filter'}`}
+                    onClick={() => setSelectedCountry('singapore')}
+                  >
+                    <i className="bi bi-geo-alt"></i> Singapore
+                  </button>
                 </div>
               </div>
+            </div>
 
-              {/* Filter Buttons */}
-              <div className="row mb-5">
-                <div className="col-12 text-center">
-                  <div className="d-flex flex-wrap justify-content-center gap-3">
-                    <button
-                      className={`d-flex align-items-center gap-2 rounded-pill px-4 py-2 fw-semibold ${selectedCountry === 'all' ? 'active-filter' : 'inactive-filter'}`}
-                      onClick={() => setSelectedCountry('all')}
-                    >
-                      <i className="bi bi-grid"></i> All Tools
-                    </button>
-                    <button
-                      className={`d-flex align-items-center gap-2 rounded-pill px-4 py-2 fw-semibold ${selectedCountry === 'india' ? 'active-filter' : 'inactive-filter'}`}
-                      onClick={() => setSelectedCountry('india')}
-                    >
-                      <i className="bi bi-geo-alt"></i> India
-                    </button>
-                    <button
-                      className={`d-flex align-items-center gap-2 rounded-pill px-4 py-2 fw-semibold ${selectedCountry === 'uae' ? 'active-filter' : 'inactive-filter'}`}
-                      onClick={() => setSelectedCountry('uae')}
-                    >
-                      <i className="bi bi-geo-alt"></i> UAE
-                    </button>
-                    <button
-                      className={`d-flex align-items-center gap-2 rounded-pill px-4 py-2 fw-semibold ${selectedCountry === 'singapore' ? 'active-filter' : 'inactive-filter'}`}
-                      onClick={() => setSelectedCountry('singapore')}
-                    >
-                      <i className="bi bi-geo-alt"></i> Singapore
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              {/* Tools Grid */}
-              {filteredTools.map((tool, index) => (
-                <div className="row g-4 align-items-center mb-5" key={index}>
-                  <div className={`col-lg-6 ${index % 2 === 1 ? 'order-lg-2' : ''}`}>
-                    <div className="resource-image">
+            {/* Tools Grid */}
+            <div className="row g-4">
+              {filteredTools.slice(0, 3).map((tool, index) => (
+                <div className="col-md-4" key={index}>
+                  <div className="card h-100 border-0 shadow-sm tool-card">
+                    <div className="card-img-top position-relative">
                       <img
                         src={tool.image}
                         alt={tool.title}
-                        className="img-fluid rounded-4 shadow-lg"
+                        className="img-fluid rounded-top"
+                        style={{ height: '200px', objectFit: 'cover', width: '100%' }}
                       />
-                      <div className="resource-badge">
-                        <span className="badge badge-orange rounded-pill px-3 py-2 fs-6">
+                      <div className="position-absolute top-0 end-0 m-3">
+                        <span className="badge bg-warning text-dark">
                           {Array.isArray(tool.country)
                             ? tool.country.map(c => c.charAt(0).toUpperCase() + c.slice(1)).join(' & ')
                             : tool.country.charAt(0).toUpperCase() + tool.country.slice(1)}
                         </span>
                       </div>
                     </div>
-                  </div>
-                  <div className={`col-lg-6 ${index % 2 === 1 ? 'order-lg-1' : ''}`}>
-                    <div className={index % 2 === 1 ? 'pe-lg-5' : 'ps-lg-5'}>
-                      <div className="section-tag mb-2">
-                        <span className="badge badge-orange px-3 py-2">TOOL</span>
-                      </div>
-                      <h2 className="display-6 fw-bold mb-4">{tool.title}</h2>
-                      <div className="accent-underline mb-4"></div>
-                      <p className="lead mb-4">{tool.desc}</p>
-                      <ul className="list-unstyled text-muted mb-4">
-                        <li className="mb-2"><i className="bi bi-check-circle-fill text-primary me-2"></i> Based on latest regulations</li>
-                        <li className="mb-2"><i className="bi bi-check-circle-fill text-primary me-2"></i> Easy to use interface</li>
-                        <li><i className="bi bi-check-circle-fill text-primary me-2"></i> Instant results</li>
-                      </ul>
-                      <a href={tool.link} className="btn btn-orange btn-lg px-4 shadow-sm">
-                        <i className={`bi ${tool.icon} me-2`}></i> Use {tool.title.split(" ")[0]}
-                      </a>
+                    <div className="card-body">
+                      <h5 className="card-title fw-bold">{tool.title}</h5>
+                      <p className="card-text text-muted">{tool.desc}</p>
+                      <Link href={tool.link} className="btn btn-warning w-100">
+                        <i className={`bi ${tool.icon} me-2`}></i> Use Tool
+                      </Link>
                     </div>
                   </div>
                 </div>
               ))}
             </div>
-          </section>
-          {/* NRI Tax Calculator Section 
-<section id="calculator_section" className="py-5 resource-section">
-  <div className="container">
-    <div className="row g-4 align-items-center">
-      <div className="col-lg-6 order-lg-2">
-        <div className="resource-image">
-          <Image
-            src="/images/tax_calc.jpg"
-            alt="NRI Tax Calculator"
-            width={600}
-            height={400}
-            className="img-fluid"
-          />
-          <div className="resource-badge">
-            <span className="badge">Popular Tool</span>
-          </div>
-        </div>
-      </div>
-      <div className="col-lg-6 order-lg-1">
-        <div className="pe-lg-5">
-          <div className="section-tag mb-2">
-            <span className="badge">FREE TOOL</span>
-          </div>
-          <h2 className="display-6 fw-bold">NRI Tax Calculator</h2>
-          <div className="accent-underline mb-4"></div>
-          <p className="lead mb-4">
-            Calculate your estimated tax liability for FY 2025-26 (AY 2026-27) with our comprehensive calculator built for NRIs.
-          </p>
-          <ul className="list-unstyled text-muted mb-4">
-            <li><i className="bi bi-check-circle-fill"></i> Accurate tax estimation based on latest slabs</li>
-            <li><i className="bi bi-check-circle-fill"></i> Instant breakdown of liability</li>
-            <li><i className="bi bi-check-circle-fill"></i> Personalized tax-saving suggestions</li>
-          </ul>
-          <button className="btn btn-orange btn-lg px-4 shadow-sm" disabled>
-            <i className="bi bi-calculator me-2"></i> Coming Soon
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>*/}
 
-          {/* NRI Tax Filing Section 
-<section id="filing_section" className="py-5 resource-section">
-  <div className="container">
-    <div className="row g-4 align-items-center">
-      <div className="col-lg-6 order-lg-2">
-        <div className="resource-image">
-          <Image
-            src="/images/tax_file.jpg"
-            alt="NRI Tax Return Filing"
-            width={600}
-            height={400}
-            className="img-fluid"
-          />
-          <div className="resource-badge">
-            <span className="badge">Step-by-Step</span>
-          </div>
-        </div>
-      </div>
-      <div className="col-lg-6 order-lg-1">
-        <div className="pe-lg-5">
-          <div className="section-tag mb-2">
-            <span className="badge">EXPERT SERVICE</span>
-          </div>
-          <h2 className="display-6 fw-bold">NRI Tax Return Filing</h2>
-          <div className="accent-underline mb-4"></div>
-          <p className="lead mb-4">
-            A guided process to help NRIs file Indian tax returns easily and accurately with expert assistance.
-          </p>
-          <ul className="list-unstyled text-muted mb-4">
-            <li><i className="bi bi-check-circle-fill"></i> Fill basic personal & residency details</li>
-            <li><i className="bi bi-check-circle-fill"></i> Submit income and deduction info</li>
-            <li><i className="bi bi-check-circle-fill"></i> Expert-assisted review and filing</li>
-          </ul>
-          <Link href="/nri-tax-return" className="btn btn-orange btn-lg px-4 shadow-sm">
-            <i className="bi bi-file-earmark-text me-2"></i> Start Tax Filing
-          </Link>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>*/}
-
-          {/* Blog Highlights Section */}
-          <div className="row mb-4">
-            <div className="col-12 text-center">
-              <h3 className="fw-bold text-dark mb-3">Recent Blog Highlights</h3>
-              <div className="accent-center-underline mx-auto mb-3"></div>
-              <p className="text-muted">Catch up with our latest knowledge drops from LinkedIn</p>
+            {/* More Tools Button */}
+            <div className="text-center mt-5">
+              <Link href="/resources/tools" className="btn btn-outline-dark rounded-pill px-4">
+                <i className="bi bi-grid-3x3-gap me-2"></i>View All Tools
+              </Link>
             </div>
           </div>
+        </section>
 
-          <div className="row g-4 justify-content-center mb-5">
-            {[
-              {
-                url: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7309249758286528513",
-                date: "April 1, 2024"
-              },
-              {
-                url: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7306616750173736960",
-                date: "March 28, 2024"
-              },
-              {
-                url: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7304068620878327808",
-                date: "March 20, 2024"
-              }
-            ].map((blog, idx) => (
-              <div className="col-md-6 col-lg-4" key={idx}>
-                <div className="bg-white rounded-4 shadow-sm overflow-hidden d-flex flex-column h-100">
-                  <iframe
-                    src={blog.url}
-                    width="100%"
-                    height="500" // 👈 Increased height for full post visibility
-                    frameBorder="0"
-                    allowFullScreen
-                    title={`Blog ${idx}`}
-                    style={{
-                      border: "none",
-                      borderRadius: "16px 16px 0 0",
-                      width: "100%",
-                      minHeight: "500px"
-                    }}
-                  ></iframe>
-                  <div className="p-3 text-end text-muted small border-top">
-                    <i className="bi bi-calendar-event me-1"></i>{blog.date}
-                  </div>
+        <div className="row g-4 justify-content-center mb-5">
+          {[
+            {
+              url: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7309249758286528513",
+              date: "April 1, 2024"
+            },
+            {
+              url: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7306616750173736960",
+              date: "March 28, 2024"
+            },
+            {
+              url: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7304068620878327808",
+              date: "March 20, 2024"
+            }
+          ].map((blog, idx) => (
+            <div className="col-md-6 col-lg-4" key={idx}>
+              <div className="bg-white rounded-4 shadow-sm overflow-hidden d-flex flex-column h-100">
+                <iframe
+                  src={blog.url}
+                  width="100%"
+                  height="500" // 👈 Increased height for full post visibility
+                  frameBorder="0"
+                  allowFullScreen
+                  title={`Blog ${idx}`}
+                  style={{
+                    border: "none",
+                    borderRadius: "16px 16px 0 0",
+                    width: "100%",
+                    minHeight: "500px"
+                  }}
+                ></iframe>
+                <div className="p-3 text-end text-muted small border-top">
+                  <i className="bi bi-calendar-event me-1"></i>{blog.date}
                 </div>
               </div>
-            ))}
-          </div>
-
-          <div className="text-center">
-            <Link href="/resources/blogs" className="btn btn-outline-dark rounded-pill px-4">
-              <i className="bi bi-newspaper me-2"></i>View All Blogs
-            </Link>
-          </div>
-
-
+            </div>
+          ))}
         </div>
 
-      </section>
+        <div className="text-center">
+          <Link href="/resources/blogs" className="btn btn-outline-dark rounded-pill px-4">
+            <i className="bi bi-newspaper me-2"></i>View All Blogs
+          </Link>
+        </div>
+
+
+
+      </section >
 
 
       {/* Newsletter & CTA Section */}
-      <section className="cta-section py-5 bg-white">
+      < section className="cta-section py-5 bg-white" >
         <div className="container">
           <div className="row">
             <div className="col-12">
@@ -478,9 +313,89 @@ const Resources = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       <style jsx>{`
+        :global(:root) {
+          --primary-color: #fcb900;
+        }
+
+        .animated-bg {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 1;
+        }
+
+        .circle-1, .circle-2, .circle-3 {
+          position: absolute;
+          border-radius: 50%;
+          background: rgba(255, 255, 255, 0.1);
+          animation: float 6s ease-in-out infinite;
+        }
+
+        .circle-1 {
+          width: 300px;
+          height: 300px;
+          top: -150px;
+          right: -150px;
+          animation-delay: 0s;
+        }
+
+        .circle-2 {
+          width: 200px;
+          height: 200px;
+          bottom: -100px;
+          left: -100px;
+          animation-delay: 2s;
+        }
+
+        .circle-3 {
+          width: 150px;
+          height: 150px;
+          top: 50%;
+          right: 10%;
+          animation-delay: 4s;
+        }
+
+        @keyframes float {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
+        }
+
+        .text-shadow {
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .wave-separator {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          line-height: 0;
+          z-index: 2;
+        }
+
+        :global(.btn-yellow) {
+          background-color: #fcb900;
+          border: none;
+          color: #000;
+          font-weight: 600;
+          transition: all 0.3s ease;
+        }
+
+        :global(.btn-yellow:hover) {
+          background-color: #e0a800;
+          color: #000;
+          transform: translateY(-2px);
+          box-shadow: 0 0 10px rgba(252, 185, 0, 0.6);
+        }
 
        .ratio-16x9 {
   aspect-ratio: 16 / 9;
