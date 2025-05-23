@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { public_url } from "../constans";
+import { PUBLIC_URL } from "../../constants";
 
 const GlobalPresence = () => {
   return (
@@ -156,8 +156,8 @@ const GlobalPresence = () => {
                 </p>
               </div>
               <JurisdictionCard
-                flag={`${public_url}/images/flags/indonesia.svg`}
-                image={`${public_url}/images/corporate/indonesia.png`}
+                flag={`${PUBLIC_URL}/images/flags/indonesia.svg`}
+                image={`${PUBLIC_URL}/images/corporate/indonesia.png`}
                 title="Indonesia"
                 features={[
                   "Manufacturing base",
@@ -166,14 +166,14 @@ const GlobalPresence = () => {
                 ]}
               />
               <JurisdictionCard
-                flag={`${public_url}/images/flags/vietnam.svg`}
-                image={`${public_url}/images/corporate/vietnam.jpg`}
+                flag={`${PUBLIC_URL}/images/flags/vietnam.svg`}
+                image={`${PUBLIC_URL}/images/corporate/vietnam.jpg`}
                 title="Vietnam"
                 features={["Growing market", "Trade agreements", "Skilled labor"]}
               />
               <JurisdictionCard
-                flag={`${public_url}/images/flags/hong-kong.svg`}
-                image={`${public_url}/images/corporate/hong-kong.jpg`}
+                flag={`${PUBLIC_URL}/images/flags/hong-kong.svg`}
+                image={`${PUBLIC_URL}/images/corporate/hong-kong.jpg`}
                 title="Hong Kong"
                 features={[
                   "Gateway to China",
@@ -182,14 +182,14 @@ const GlobalPresence = () => {
                 ]}
               />
               <JurisdictionCard
-                flag={`${public_url}/images/flags/bvi.svg`}
-                image={`${public_url}/images/corporate/BVI-2.jpg`}
+                flag={`${PUBLIC_URL}/images/flags/bvi.svg`}
+                image={`${PUBLIC_URL}/images/corporate/BVI-2.jpg`}
                 title="British Virgin Islands"
                 features={["Tax neutral", "Asset protection", "Offshore entity"]}
               />
               <JurisdictionCard
-                flag={`${public_url}/images/flags/cayman.svg`}
-                image={`${public_url}/images/corporate/cayman-islands.jpg`}
+                flag={`${PUBLIC_URL}/images/flags/cayman.svg`}
+                image={`${PUBLIC_URL}/images/corporate/cayman-islands.jpg`}
                 title="Cayman Islands"
                 features={[
                   "Investment hub",
@@ -198,8 +198,8 @@ const GlobalPresence = () => {
                 ]}
               />
               <JurisdictionCard
-                flag={`${public_url}/images/flags/Nigeria-flag.png`}
-                image={`${public_url}/images/corporate/nigeria.jpg`}
+                flag={`${PUBLIC_URL}/images/flags/Nigeria-flag.png`}
+                image={`${PUBLIC_URL}/images/corporate/nigeria.jpg`}
                 title="Nigeria"
                 features={[
                   "Investment incentives",
