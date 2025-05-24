@@ -68,7 +68,7 @@ export default function FinalHero() {
                             <Swiper
                                 loop={true}
                                 modules={[Autoplay, Navigation]}
-                                autoplay={{ delay: 2000 }}
+                                autoplay={{ delay: 4000 }}
 
                                 // slidesPerView={3}
                                 // spaceBetween={5}
