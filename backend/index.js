@@ -29,8 +29,8 @@ initializePassport(passport);  // <--- NOT `passportConfig;`
 
 // Security Middleware
 app.use(helmet({
-  crossOriginEmbedderPolicy: false, // ✅ Disable this for CORS
-  contentSecurityPolicy: false      // ✅ Optional: disables CSP if you're loading scripts or data from other domains
+  crossOriginEmbedderPolicy: false, //  Disable this for CORS
+  contentSecurityPolicy: false      //  Optional: disables CSP if you're loading scripts or data from other domains
 }));
 
 app.use(cors({

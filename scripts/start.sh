@@ -8,7 +8,7 @@ cd /home/ubuntu/ASPLwebD/frontend
 rm -rf .next
 mv .env.production .env
 # ✅ Set frontend env variables for public API use
-export NEXT_PUBLIC_ASPL_API_URL=http://13.251.247.41:3333
+export NEXT_PUBLIC_ASPL_API_URL=https://theangelservices.com/
 export NODE_ENV=production
 
 # Install and build
@@ -28,7 +28,7 @@ npm ci
 # ✅ Set backend environment variables
 export NODE_ENV=production
 export BACKEND_PORT=3333
-export CLIENT_BASE_URL=http://13.251.247.41:3000
+export CLIENT_BASE_URL=https://theangelservices.com/
 
 # Restart PM2 app for backend
 pm2 delete aspl-backend || true
