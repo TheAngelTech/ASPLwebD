@@ -13,7 +13,7 @@ export const refreshToken = async (req, res) => {
     res.cookie('token', token, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
-     sameSite: 'None',
+      sameSite: 'None',
       maxAge: 24 * 60 * 60 * 1000 // 1 day
     });
 
@@ -43,8 +43,10 @@ export const refreshToken = async (req, res) => {
 
 export const login = async (req, res) => {
   try {
+     console.log('REQ HEADERS:', req.headers);
+    console.log('REQ BODY:', req.body);
     const { token, refreshToken, user } = await authService.loginUser(req.body);
-
+   
     // ✅ Set HTTP-only cookie for refresh token
     res.cookie('refreshToken', refreshToken, {
       httpOnly: true,

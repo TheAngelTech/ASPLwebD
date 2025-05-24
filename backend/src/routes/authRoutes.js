@@ -17,6 +17,7 @@ const router = express.Router();
 
 // router.post('/register', register);
 router.post('/login', login);
+
 router.post('/request-reset', requestPasswordReset);         // generate reset token
 router.post('/reset-password', resetPassword);               // use token to reset password
 
