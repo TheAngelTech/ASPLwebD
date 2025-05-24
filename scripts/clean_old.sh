@@ -1,5 +1,14 @@
 #!/bin/bash
-rm -rf /opt/codedeploy-agent/deployment-root/*
+echo "🧼 Cleaning up old deployments and caches..."
+
+# Safe to delete
 rm -rf /opt/codedeploy-agent/deployment-archive/*
-rm -rf ~/.npm
-rm -rf ~/.cache/puppeteer
+
+# Dangerous – avoid deleting this
+# rm -rf /opt/codedeploy-agent/deployment-root/* ❌
+
+# Clean user-level caches
+rm -rf /home/ubuntu/.npm
+rm -rf /home/ubuntu/.cache/puppeteer
+
+echo "✅ Clean-up done."
